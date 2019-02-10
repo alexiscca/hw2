@@ -26,7 +26,7 @@ var ballDirection = ballSpeed;
 function draw() {
   background(220);
   fill(255, 255, 0);
-  ellipse(width/2, ball, 50);
+  ellipse(ball, ball, ball);
 
   
   ball = ball + ballDirection;
@@ -49,3 +49,4 @@ function draw() {
 </script>
 </body>
 </html>
+
