@@ -2,7 +2,7 @@
 Homework #2
 
 
-## In this homework assignment I learned how to make objects move. I learned how to replicate a mondrian painting and make it's compoments change. I also learned how to make a ball bounce back and forth on the screen. I learned how to use HSB color mode.
+#### In this homework assignment I learned how to make objects move. I learned how to replicate a mondrian painting and make it's compoments change. I also learned how to make a ball bounce back and forth on the screen. I learned how to use HSB color mode.
 
 
  In your README.me file, answer: what changes in the animation when you renamed the variables? What if you change them to nonsense names, like "dog" and "cat"?
