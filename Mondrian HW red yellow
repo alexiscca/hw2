@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<meta charset="utf-8" />
+</head>
+<body>
+<script>
+
+function setup() {
+  createCanvas(400, 550);
+}
+
+var sw = 8;
+let value = 0;
+
+function draw() {
+  background(255);
+
+  noStroke();
+  //fill(255, 204, 0, 100); //yellow square
+  fill(value);
+  rect(250, 0, 150, 150);
+
+  
+  fill('red'); //red square
+  rect(0, 500, 250, 150);
+  
+  
+  
+  stroke(0);
+  strokeWeight(sw);
+	line(250, 0, 250, height); //vertical1 
+	line(0, 150, width, 150); //horizontal1 
+	line(0, 500, width, 500); //horizontal2
+}
+
+function mouseMoved() {
+  value = value + 5;
+  if (value > 205) {
+    value = 0;
+  }
+}
+
+
+
+</script>
+</body>
+</html>
