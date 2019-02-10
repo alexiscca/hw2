@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<meta charset="utf-8" />
+</head>
+<body>
+<script>
+
+function setup() {
+  createCanvas(550, 550);
+}
+
+var sw = 6;
+var blueY = 525;
+var blueSpeed = 2;
+var blueDirection = blueSpeed;
+
+function draw() {
+  background(255);
+  
+  
+  noStroke();
+  fill(255, 204, 0); //yellow square
+  rect(0, 0, 250, 250);
+  
+  stroke(0);
+  strokeWeight(sw);
+  line(250, 0, 250, height); //vertical1 
+  line(270, 0, 270, height); //vertical2
+  
+  line(0, 250, width, 250); //horizontala1
+  line(0, 280, width, 280); //horizontala2
+ 
+  line(0, 370, width, 370); //horizontala1
+  line(0, 400, width, 400); //horizontala2
+
+  
+  line(20, 280, 20, 370); //vertical3small
+  
+  line(415, 400, 415, height); //vertical3small
+  
+  
+
+  fill('blue'); //blue block
+  //rect(270, blueY, 145, 30);
+  rect(270, blueY, 145, 30);
+  
+  blueY = blueY + blueDirection;
+  
+    //check if blue is hitting bottom
+  if (blueY >= height) {
+    blueDirection = 0-blueSpeed;
+  }
+  //check if ball is hitting top
+  if (blueY <= 0) {
+    blueDirection = blueSpeed;
+  }
+  
+
+}
+
+
+
+</script>
+</body>
+</html>
