@@ -23,9 +23,12 @@ let value = 0;
 function draw() {
   background(255);
 
+
   noStroke();
-  //fill(255, 204, 0, 100); //yellow square
-  fill(value);
+  fill(255, 204, 0); //yellow square
+  rect(250, 0, 150, 150);
+
+  fill(value, 150);
   rect(250, 0, 150, 150);
 
   
